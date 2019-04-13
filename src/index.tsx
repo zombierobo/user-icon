@@ -48,7 +48,7 @@ function App() {
         <User size={demoIconSize} colorKey="success" />
         <User size={demoIconSize} solid colorKey="success" />
         <User size={demoIconSize} colorKey="mycolor" />
-        <User size={demoIconSize} solid colorKey="mycolor" />
+        <User size={demoIconSize} solid fill="pink" />
       </div>
       <div>
         <User size={demoIconSize} alerted />
@@ -60,7 +60,7 @@ function App() {
         <User size={demoIconSize} alerted={{ colorKey: "success" }} />
         <User size={demoIconSize} solid alerted={{ colorKey: "success" }} />
         <User size={demoIconSize} alerted={{ colorKey: "mycolor" }} />
-        <User size={demoIconSize} solid alerted={{ colorKey: "mycolor" }} />
+        <User size={demoIconSize} solid alerted={{ fill: "pink" }} />
       </div>
       <div>
         <User size={demoIconSize} badged />
@@ -72,7 +72,17 @@ function App() {
         <User size={demoIconSize} badged={{ colorKey: "success" }} />
         <User size={demoIconSize} solid badged={{ colorKey: "success" }} />
         <User size={demoIconSize} badged={{ colorKey: "mycolor" }} />
-        <User size={demoIconSize} solid badged={{ colorKey: "mycolor" }} />
+        <User size={demoIconSize} solid badged={{ fill: "pink" }} />
+      </div>
+
+      <div style={{ marginTop: "24px" }}>
+        <span>
+          Icon from{" "}
+          <a href="https://clarity.design/icons" target="_blank">
+            clarity design
+          </a>{" "}
+          system.
+        </span>
       </div>
     </div>
   );
