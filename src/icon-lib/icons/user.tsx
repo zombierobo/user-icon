@@ -13,6 +13,7 @@ interface IconFileData {
 
 interface ActualProps {
   size: number;
+  dir: 'up' | 'down' | 'left' | 'right';
   solid: boolean;
   badged: boolean | { colorKey?: string; fill?: string };
   alerted: boolean | { colorKey?: string; fill?: string };
@@ -222,6 +223,15 @@ const User = (props: Props) => {
     <SvgWrapper
       height={props.size ? `${props.size}px` : `${iconSize}px`}
       width={props.size ? `${props.size}px` : `${iconSize}px`}
+      transform={
+        props.dir === 'down'
+          ? 'rotate(180deg)'
+          : props.dir === 'right'
+          ? 'rotate(90deg)'
+          : props.dir === 'left'
+          ? 'rotate(270deg)'
+          : undefined
+      }
       fill={
         props.fill
           ? props.fill

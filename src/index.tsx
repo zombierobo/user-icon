@@ -75,6 +75,13 @@ function App() {
         <User size={demoIconSize} solid badged={{ fill: "pink" }} />
       </div>
 
+      <div>
+        <User size={demoIconSize} />
+        <User size={demoIconSize} dir="right" />
+        <User size={demoIconSize} dir="down" />
+        <User size={demoIconSize} dir="left" />
+      </div>
+
       <div style={{ marginTop: "24px" }}>
         <span>
           Icon from{" "}
